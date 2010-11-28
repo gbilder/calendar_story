@@ -1,0 +1,4 @@
+A simple javascript library that allows one to create web-based "stories" where each "episode" of the story only becomes activated on a specified date. 
+
+Handles time-zones and allows for stories translated into multiple languages.
+

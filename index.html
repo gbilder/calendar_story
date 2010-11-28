@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Calendar Story</title>
+	<meta name="generator" content="TextMate http://macromates.com/">
+	<meta name="author" content="Geoffrey Bilder">
+	<!-- Date: 2010-11-27 -->
+	<link rel="stylesheet" type="text/css" href="http://static.flowplayer.org/tools/css/standalone.css"/>	
+	<link rel="stylesheet" type="text/css" href="http://static.flowplayer.org/tools/css/overlay-apple.css"/> 
+	<link rel="stylesheet" type="text/css" href="/css/calendar_story.css"/>		
+</head>
+<body>
+	
+	<h1>This is a calendar-based story</h1>
+	<p>Click on the dates in order to get the episode for that date.</p>
+	
+	<!-- external page is given in the href attribute (as it should be) --> 
+	<a href="episode1.html" rel="#overlay" style="text-decoration:none"> 
+		<!-- remember that you can use any element inside the trigger --> 
+		<button type="button">Day 1</button>	
+	</a> 
+	<!-- another link. uses the same overlay --> 
+	<a href="episode2.html" rel="#overlay" style="text-decoration:none"> 
+		<button type="button">Day 2</button> 
+	</a> 
+
+
+	<!-- overlayed element --> 
+	<div class="apple_overlay" id="overlay"> 
+		<!-- the external content is loaded inside this tag --> 
+		<div class="contentWrap"></div> 
+	</div>
+
+	<script src="http://cdn.jquerytools.org/1.2.5/full/jquery.tools.min.js"></script>
+	<script src="/story/js/calendar_story.js"></script>
+</body>
+</html>
