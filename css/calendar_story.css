@@ -1,3 +1,5 @@
+
+
 #overlay {
 	background-image:url(http://static.flowplayer.org/img/overlay/transparent.png);
 	color:#efefef;
@@ -8,6 +10,12 @@
 div.contentWrap {
 	height:441px;
 	overflow-y:auto;
+}
+
+/* By default, all episode links are disabled */
+a.episode {
+	text-decoration:none;
+	opacity:0.5;
 }
 
 

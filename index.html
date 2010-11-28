@@ -8,24 +8,33 @@
 	<meta name="generator" content="TextMate http://macromates.com/">
 	<meta name="author" content="Geoffrey Bilder">
 	<!-- Date: 2010-11-27 -->
-	<link rel="stylesheet" type="text/css" href="http://static.flowplayer.org/tools/css/standalone.css"/>	
 	<link rel="stylesheet" type="text/css" href="http://static.flowplayer.org/tools/css/overlay-apple.css"/> 
-	<link rel="stylesheet" type="text/css" href="/css/calendar_story.css"/>		
+	<link rel="stylesheet" type="text/css" href="/calendar_story/css/calendar_story.css"/>		
 </head>
 <body>
 	
 	<h1>This is a calendar-based story</h1>
 	<p>Click on the dates in order to get the episode for that date.</p>
+	<div id="story_language" language="en"/>
 	
 	<!-- external page is given in the href attribute (as it should be) --> 
-	<a href="episode1.html" rel="#overlay" style="text-decoration:none"> 
+	<a class="episode" date="2010-11-27" href="/calendar_story/episodes/en/2010-11-27.html" rel="#overlay"> 
 		<!-- remember that you can use any element inside the trigger --> 
-		<button type="button">Day 1</button>	
+		<button type="button">November 27th</button>	
+	</a> 
+	<!-- external page is given in the href attribute (as it should be) --> 
+	<a class="episode" date="2010-11-27" href="/calendar_story/episodes/en/2010-11-27.html" rel="#overlay"> 
+		<!-- same as above but with an image instead of a button --> 
+		<img alt="Day 1" src="/calendar_story/img/dates/27.png"></img>	
+	</a>
+	<!-- another link. uses the same overlay --> 
+	<a class="episode" date="2010-11-28" href="/calendar_story/episodes/en/2010-11-28.html" rel="#overlay"> 
+		<button type="button">November 28th</button> 
 	</a> 
 	<!-- another link. uses the same overlay --> 
-	<a href="episode2.html" rel="#overlay" style="text-decoration:none"> 
-		<button type="button">Day 2</button> 
-	</a> 
+	<a class="episode" date="2010-11-29" href="/calendar_story/episodes/en/2010-11-29.html" rel="#overlay"> 
+		<button type="button">November 29th</button> 
+	</a>
 
 
 	<!-- overlayed element --> 
@@ -35,6 +44,6 @@
 	</div>
 
 	<script src="http://cdn.jquerytools.org/1.2.5/full/jquery.tools.min.js"></script>
-	<script src="/story/js/calendar_story.js"></script>
+	<script src="/calendar_story/js/calendar_story.js"></script>
 </body>
 </html>
