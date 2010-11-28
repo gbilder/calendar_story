@@ -20,7 +20,11 @@ var calendar_story = {
 		$('a.episode').each(function() {
 			// 'this' is a DOM element, we need to turn it into a jQuery object
 			var $this = $(this); 
-			var episode_date = new Date($this.attr("date"));
+			// Hack to get around fact that Safari doesn't parse dates of format YYYY-MM-DD
+			var episode_date_string = $this.attr("date");
+			episode_date_string = episode_date_string.replace(/\-/g,"/");
+			
+			var episode_date = new Date(episode_date_string);
 			if (episode_date <= today) { 
 				var language = calendar_story.selected_language();
 				var href = calendar_story.story_server + calendar_story.base_path + "/episodes/" + language  + "/" + $this.attr("date") + ".html";
