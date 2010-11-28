@@ -7,7 +7,7 @@ var calendar_story = {
 	
 	// Control the presentaton of the overlay
 	
-	mask: 'darkred',
+	mask: 'darkgreen',
 	effect: 'apple',
 	
 	log: function(text) {
